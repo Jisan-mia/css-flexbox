@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <title>css flex-box 2</title>
+    <style>
+    
+        .flexbox-container{
+            background: yellow;
+            display: flex;
+            
+        }
+        .flexbox-item{
+            width: 150px;
+            margin: 10px;
+            border: 3px solid #333;
+            background-color: #dfdfdf;
+        }
+        .item1{
+            min-height: 70px;
+            flex-shrink: 0;
+            order: 3;
+        }
+        .item2{
+            min-height: 120px;
+            flex-grow: 2;
+            flex-basis: 0;
+            order: 1;
+        }
+        .item3{
+            min-height: 190px;
+            flex-grow: 1;
+            flex-basis: 0;
+            order: 2;
+        }
+        p{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="flexbox-container">
+        <div class="flexbox-item item1"><p>Flexbox 01</p></div>
+        <div class="flexbox-item item2"><p>Flexbox 02</p></div>
+        <div class="flexbox-item item3"><p>Flexbox 03</p></div>
+    </div>
+
+</body>
+</html>

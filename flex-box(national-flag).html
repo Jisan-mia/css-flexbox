@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <title>national flag</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .main{
+/*
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center
+            
+*/
+            margin: 50px ;
+        }
+        .container{
+            margin: 0 auto;
+            width: 500px;
+            height: 300px;
+            background-color: green;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        .circle{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            border-radius: 50%;
+        }
+        .container::before{
+            content: '';
+            position: absolute;
+            left: 0px;
+            right: 0;
+            top: -15px ;
+            width: 17px;
+            height: 600px;
+            background-color: gray;
+            border-radius: 8px;
+        }
+        @media (max-width: 768px){
+            .main{
+                margin: 50px 0 0;
+                
+            }
+            .container::before{
+                width: 14px;
+                height: 480px;
+            }
+            .container{
+                width: 300px;
+                height: 200px;
+            }
+            .circle{
+                width: 120px;
+                height: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+   <section class="main">
+        <div class="container">
+            <div class="circle"></div>
+        </div>
+   </section>
+    
+</body>
+</html>
