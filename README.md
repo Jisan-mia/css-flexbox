@@ -39,7 +39,9 @@ Flexbox is a css box model to easily layout, align and distribute space among it
    - `flex-flow: row-reverse wrap;`
 
 
-> ### Main axis alignment properties
+### Main axis alignment properties
+
+---
 
 - _`justify-content`_ property defines how the remaining space of content of main-axis should be distributed in main-axis.
    - _`justify-content: flex-start (default)`_ move/align the content to the start
@@ -50,8 +52,9 @@ Flexbox is a css box model to easily layout, align and distribute space among it
    - _`justify-content: space-evenly`_ space equally in every items
 
 
-> ### Cross axis alignment properties
+### Cross axis alignment properties
 
+---
 
 - _`align-items`_ property defines how the remaining space of items(alignment content) of cross axis should be distributed in cross axis.
    - _`align-items: stretch`_ default
