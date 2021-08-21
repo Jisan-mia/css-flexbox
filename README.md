@@ -19,7 +19,7 @@ Flexbox is a css box model to easily layout, align and distribute space among it
 - When `flex-direction: column || column reverse` one thing happens here, _main axis_ come into the place of _cross axis_ and _cross axis_ take place of _main axis_
 
 
-![alternative text](images/flex1.png "Image Title")
+![alternative text](images/flex.png "Image Title")
 
 ### Available properties for Flex container
 
