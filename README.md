@@ -1,11 +1,11 @@
 ## CSS FLEXBOX
 
----
 
 **What's this?**
 Flexbox is a css box model to easily layout, align and distribute space among items withing a container either horizontally or vertically.
 
 ## Before get started we need to know some of the flexbox basics:
+
 - In flexbox, the element or container which wraps all the children elements or items is called _flexbox container_ and childrens or each children elements/items are called _flexbox items_.
 - Flex container has their own properties and values
 - Same goes to children, also flex items/childrens has their own properties and values
@@ -23,7 +23,6 @@ Flexbox is a css box model to easily layout, align and distribute space among it
 
 ## Available properties for Flex container
 
----
 
 - Obviously, to make a container flex container we need to write `display: flex`
 - To change the directions of flex items there is-
