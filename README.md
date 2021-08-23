@@ -21,7 +21,7 @@ If your think you more feel comfortable reading Bangla explanation here is my an
 - When `flex-direction: column || column reverse` one thing happens here, _main axis_ come into the place of _cross axis_ and _cross axis_ take place of _main axis_
 
 
-![alternative text](images/flex.png "Image Title")
+![flexbox](images/flex.png "Image Title")
 
 
 ## Available properties for Flex container
@@ -92,3 +92,41 @@ If your think you more feel comfortable reading Bangla explanation here is my an
 
 - And lastly but not least there is another property which combines _`flex-grow`_, _`flex-shrink`_ and _`flex-basis`_ into one property and should be written there values separated by spaces. The property name is _`flex`_
    - _`flex: 1 1 33.33%`_ flex-grow value | flex-shrink value | flex-basis value
+
+
+---
+
+## Let's create national flag of Bangladesh using css flexbox
+ ![flag](images/flag.png)
+
+It won't take more than just 2 minute to create the flag. I showing you step by step
+
+1. HTML part: create html boilerplate code by typing ! and hit tab on vscode. 
+
+2. Inside body tag
+   ```html
+   <div class="rectangle">
+      <div class="circle"></div>
+   </div>
+   ```
+3. Inside head tag
+   ```css
+   .rectangle{
+      background-color: #00684D;
+      width: 500px;
+      height: 300px;
+      border-radius: 5px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items:  center;
+   }
+   .circle{
+      width: 220px;
+      height: 220px;
+      margin-right: 45px;
+      border-radius: 50%;
+      background-color: #E72D41;
+   }
+   ```
+### I know you got your expected output at the same time now you understand what's happening on the code. If not then read again.
