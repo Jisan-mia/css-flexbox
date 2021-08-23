@@ -129,4 +129,4 @@ It won't take more than just 2 minute to create the flag. I'll show you step by 
       background-color: #E72D41;
    }
    ```
-### I know you got your expected output at the same time now you understand what's happening on the code. If not then read again.
+### I know you got your expected output at the same time now you understand what's happening on the code. If not then try reading it carefully again.
