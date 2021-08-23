@@ -99,7 +99,7 @@ If your think you more feel comfortable reading Bangla explanation here is my an
 ## Let's create national flag of Bangladesh using css flexbox
  ![flag](images/flag.png)
 
-It won't take more than just 2 minute to create the flag. I showing you step by step
+It won't take more than just 2 minute to create the flag. I'll show you step by step
 
 1. HTML part: create html boilerplate code by typing ! and hit tab on vscode. 
 
