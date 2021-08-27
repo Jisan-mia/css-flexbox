@@ -117,6 +117,8 @@ It won't take more than just 2 minute to create the flag. I'll show you step by 
       height: 300px;
       border-radius: 5px;
       margin: 0 auto;
+      
+      // this flex-box code do the main part
       display: flex;
       justify-content: center;
       align-items:  center;
