@@ -132,3 +132,4 @@ It won't take more than just 2 minute to create the flag. I'll show you step by 
    }
    ```
 ### I know you got your expected output at the same time now you understand what's happening on the code. If not then try reading it carefully again.
+### Okay, if you think this _hijibiji_ English is not understandable to you then Guess What! [Learn With Sumit](https://www.youtube.com/c/LearnwithSumit) has a wonderful course on CSS FLEXBOX in bangla where I also got clarified about this topic. The course is available for completely free both on [youtube](https://www.youtube.com/watch?v=kRS5ficucNM) and [udemy](https://www.udemy.com/course/css-flexbox-crash-course-in-bangla/)  about css flexbox
