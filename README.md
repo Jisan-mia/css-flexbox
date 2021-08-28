@@ -4,7 +4,7 @@
 **What's this?**
 Flexbox is a css box model to easily layout, align and distribute space among items withing a container either horizontally or vertically.
 
-If your think you more feel comfortable reading Bangla explanation here is my another article **[Learn CSS Flexbox in an interesting way!](https://jisanmia.medium.com/learn-css-flexbox-in-an-interesting-way-3ed3c826efb9)** explained in Bangla
+If your think you feel more comfortable reading Bangla explanation here is my another article **[Learn CSS Flexbox in an interesting way!](https://jisanmia.medium.com/learn-css-flexbox-in-an-interesting-way-3ed3c826efb9)** explained in Bangla
 
 ## Before get started we need to know some of the flexbox basics:
 
