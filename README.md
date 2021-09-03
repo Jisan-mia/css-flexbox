@@ -4,7 +4,7 @@
 **What's this?**
 Flexbox is a css box model to easily layout, align and distribute space among items withing a container either horizontally or vertically.
 
-If your think you more feel comfortable reading Bangla explanation here is my another article **[Learn CSS Flexbox in an interesting way!](https://jisanmia.medium.com/learn-css-flexbox-in-an-interesting-way-3ed3c826efb9)** explained in Bangla
+If your think you feel more comfortable reading Bangla explanation here is my another article **[Learn CSS Flexbox in an interesting way!](https://jisanmia.medium.com/learn-css-flexbox-in-an-interesting-way-3ed3c826efb9)** explained in Bangla
 
 ## Before get started we need to know some of the flexbox basics:
 
@@ -117,6 +117,8 @@ It won't take more than just 2 minute to create the flag. I'll show you step by 
       height: 300px;
       border-radius: 5px;
       margin: 0 auto;
+      
+      /* this flex-box code do the main part */
       display: flex;
       justify-content: center;
       align-items:  center;
@@ -130,3 +132,4 @@ It won't take more than just 2 minute to create the flag. I'll show you step by 
    }
    ```
 ### I know you got your expected output at the same time now you understand what's happening on the code. If not then try reading it carefully again.
+### Okay, if you think this _hijibiji_ English is not understandable to you then Guess What! [Learn With Sumit](https://www.youtube.com/c/LearnwithSumit) has a wonderful course on CSS FLEXBOX in bangla where I also got clarified about this topic. The course is available for completely free both on [youtube](https://www.youtube.com/watch?v=kRS5ficucNM) and [udemy](https://www.udemy.com/course/css-flexbox-crash-course-in-bangla/)  about css flexbox
