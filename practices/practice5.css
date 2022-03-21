@@ -1,17 +1,20 @@
 .container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1.5rem;
+  gap: 1rem;
   flex-wrap: wrap;
-
+  width: 500px;
+  height: 500px;
+  border: 3px solid lightgrey;
 }
 .child {
-  height: 100px;
-  width: 100px;
+  height: 70px;
+  width: 70px;
   border-radius: 4px;
   background: tomato;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.child-1 {
+  flex-grow: 1;
 }

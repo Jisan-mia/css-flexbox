@@ -105,9 +105,42 @@ Flexbox is a css box model to easily layout, align and distribute space among it
    - _`order: 0`_ (default) by default each items has the value 0
    - _`order: 1 | 2 | 3 | etc.`_ Item orders from the lowest order number to the largest order number.
   
-- _`flex-grow`_ property of a flex item defines how items should grow (চউরা হবে)
-   - _`flex-grow: 0`_ default
-   - _`flex-grow: 1`_ each item grows equally to fit the container width in main-axis.
+- _`flex-grow`_ property of a flex item defines how items should grow (চউরা হবে). It's going to apply to flex-items when they don't naturally fill the entire main axis of the container.
+   - _`flex-grow: 0`_ means by default each-items/item is going to take up 0 percent of the empty space within the container
+   - _`flex-grow: 1`_ each-items/item grows equally to fit the container width or take up empty space in main-axis. 
+   - _`flex-grow: 3`_
+<pre>
+imagine we have a 300px width container and
+it has 4 items with 30px width and 30px height
+
+4 items total width, 30X4 = 120x, 
+remaining empty space, 300-120x = 180px 
+
+first 3 item `flex-grow` value is set to 1 and the last item `flex-grow: 3`
+sums up, 1+1+1+3 = 6
+
+Now, we have to divide 180/6 = 30px
+means, 1 unit = 30px
+
+.item-1,{
+   flex-grow: 1 (total width, 30px + 1X30 = 60px)
+}
+.item-2{
+   flex-grow: 1 (total width, 30px + 1X30 = 60px)
+}
+.item-3{
+   flex-grow: 1 (total width, 30px + 1X30 = 60px)
+}
+.item-4{
+   flex-grow: 3 (total width, 30px + 4X30 = 120px)
+}
+
+All-total width, 
+60+60+60+120 = 300px which is equals to container width.
+
+That's how flex-grow property actually works
+
+</pre>
 
 - _`flex-shrink`_ property defines if items should shrink or not or ছোট হবে কি হবে না তা ডিফাইন করে।
    - _`flex-shrink: 1`_ default. means means it'll shrink to fit into the container width
