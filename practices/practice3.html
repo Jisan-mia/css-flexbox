@@ -1,60 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
-    <title>Flex box responsive navigation</title>
-    <style>
-        body{
-            font-family: sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        nav{
-            
-            font-size: 1.4rem;
-            background-color: #f1f1f1;
-        }
-        nav ul{
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-/*            justify-content: space-around*/
-        }
-        nav ul li{
-            cursor: pointer;
-            padding: 0.5rem;
-            flex: auto;
-            text-align: center;
-            transition: all 0.6s ease;
-        }
-        nav ul li:hover{
-            background-color: #555;
-            color:white;
-            border-radius: 2px;
-            transition: all 0.6s ease;
-         
-        }
-        @media all and (max-width: 500px){
-            nav ul{
-                flex-direction: column;
-            }
-            nav ul li{
-                text-align: center;
-            }
-        
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+  <title>Flex box responsive navigation</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+
+      font-size: 1.4rem;
+      background-color: #f1f1f1;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      /*            justify-content: space-around*/
+    }
+
+    nav ul li {
+      cursor: pointer;
+      padding: 0.5rem;
+      flex: auto;
+      text-align: center;
+      transition: all 0.6s ease;
+    }
+
+    nav ul li:hover {
+      background-color: #555;
+      color: white;
+      border-radius: 2px;
+      transition: all 0.6s ease;
+
+    }
+
+    @media all and (max-width: 500px) {
+      nav ul {
+        flex-direction: column;
+      }
+
+      nav ul li {
+        text-align: center;
+      }
+
+    }
+  </style>
 </head>
+
 <body>
-    <nav>
-        <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Services</li>
-            <li>Contact</li>
-        </ul>
-    </nav>
+  <nav>
+    <ul>
+      <li>Home</li>
+      <li>About</li>
+      <li>Services</li>
+      <li>Contact</li>
+    </ul>
+  </nav>
 </body>
+
 </html>
