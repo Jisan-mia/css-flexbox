@@ -8,7 +8,22 @@ Flexbox is a css box model to easily layout, align and distribute space among it
    - Simplify layouts
    - Reduce need for media queries(responsive design)
 
-If your think you feel more comfortable reading Bangla explanation here is my another article **[Learn CSS Flexbox in an interesting way!](https://jisanmia.medium.com/learn-css-flexbox-in-an-interesting-way-3ed3c826efb9)** explained in Bangla
+## Topics Covered
+| Flex container properties | Flex items properties |
+| :---- | :---- |
+| `display` | `align-self` |
+| `flex-direction` | `order` |
+| `flex-wrap` | `flex-grow` |
+| `flex-flow` | `flex-shrink` |
+| `justify-content` | `flex-basis` |
+| `align-items` | `flex` |
+| `align-content` |  
+
+
+### Note
+| If your think you feel more comfortable reading Bangla explanation here is my another article **[Learn CSS Flexbox in an interesting way!](https://jisanmia.medium.com/learn-css-flexbox-in-an-interesting-way-3ed3c826efb9)** explained in Bangla |
+| --- |
+
 
 ## Before get started we need to know some of the flexbox basics:
 
@@ -78,6 +93,8 @@ If your think you feel more comfortable reading Bangla explanation here is my an
 
 
 ## Also there are some properties for flex items/children. Let's explore them
+
+- _`align-self`_ 
 
 - _`order`_ property defines its/items order or sequences. Values of order property must be an integer
    - _`order: 0`_ (default) by default each items has the value 0
