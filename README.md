@@ -96,8 +96,11 @@ Flexbox is a css box model to easily layout, align and distribute space among it
 
 ## Also there are some properties for flex items/children. Let's explore them
 
-- _`align-self`_ 
-
+- _`align-self`_ property used to align individual flex items. Essentially it's the same exact thing as `align-items` except it only applies to a single flex item.
+  - _`align-self: flex-start`_ (default) align single item to the start of the container
+  - _`align-self: flex-end`_ (default) align single item to the end
+  - _`align-self: center`_ (default) align single item to the center of the container
+   
 - _`order`_ property defines its/items order or sequences. Values of order property must be an integer
    - _`order: 0`_ (default) by default each items has the value 0
    - _`order: 1 | 2 | 3 | etc.`_ Item orders from the lowest order number to the largest order number.
