@@ -83,7 +83,9 @@ Flexbox is a css box model to easily layout, align and distribute space among it
    - _`align-items: flex-end`_ align items to the end
    - _`align-items: center`_ align items to the center
   
-- _`align-content`_ property defines how the remaining space of the full content should be distributed in cross axis.
+- _`align-content`_ property defines how the remaining space of the full content should be distributed in cross axis. 
+> If `flex-wrap` value is set to anything other than `nowrap`, only then we have to use `align-content` in the place of `align-items`. And it has the same possible values as `align-items`
+  
    - _`align-content: flex-start`_ default. align content to the start in cross-axis
    - _`align-content: flex-end`_ align content to the end
    - _`align-content: center`_ align content to the center
