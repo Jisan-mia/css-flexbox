@@ -109,6 +109,7 @@ Flexbox is a css box model to easily layout, align and distribute space among it
    - _`flex-grow: 0`_ means by default each-items/item is going to take up 0 percent of the empty space within the container
    - _`flex-grow: 1`_ each-items/item grows equally to fit the container width or take up empty space in main-axis. 
    - _`flex-grow: 3`_
+   
 <pre>
 flex-grow in detail:
 
@@ -119,7 +120,7 @@ it has 4 items with 30px width and 30px height
 remaining empty space, 300-120x = 180px 
 
 first 3 item `flex-grow` value is set to 1 and the last item `flex-grow: 3`
-sums up, 1+1+1+3 = 6
+sums up, 1+1+1+3 = 6 unit
 
 Now, we have to divide 180/6 = 30px
 means, 1 unit = 30px
