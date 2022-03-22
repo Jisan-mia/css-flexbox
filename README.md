@@ -111,6 +111,7 @@ Flexbox is a css box model to easily layout, align and distribute space among it
    - _`flex-grow: 3`_
    
 <pre>
+
 flex-grow in detail:
 
 imagine we have a 300px width container and
@@ -145,9 +146,79 @@ That's how flex-grow property actually works
 
 </pre>
 
-- _`flex-shrink`_ property defines if items should shrink or not or ছোট হবে কি হবে না তা ডিফাইন করে।
-   - _`flex-shrink: 1`_ default. means means it'll shrink to fit into the container width
+- _`flex-shrink`_ property defines if items should shrink or not or ছোট হবে কি হবে না তা ডিফাইন করে। It's the opposite of `flex-grow` which defines whether flex-items will fil up the empty space of it's container. On the other hand, `flex-shrink` controls the overflow the flex-items.
+   - _`flex-shrink: 1`_ default. means means items will shrink to fit into the container width
    - _`flex-shrink; 0`_ means it won't shrink
+
+<pre>
+
+flex-shrink in detail:
+
+imagine we have a 400px width container and it's items dimension is 50px/50px.
+
+8 flex-items(8*50 = 400) will fit perfectly in that container(400px)
+
+Now, instead of 8 item we added 9 flex-items. it overflow the container, because total flex-items width(9*50 = 450px) is getter than container width(400px). So it overflows by 50px(450px-400px). 
+
+This will fit within the container, because by default all flex-items have `flex-shrink: 1`. It means that if we overflow by 50px, each flex item will take an equal share of that overflow and shrink by that amount (so long as it doesn't shrink the items less than the size of their content).
+
+# Breaking it down:
+  - 400px total width
+  - 9 flex-items at a width of 50px each = 450x, so there is 50px overflow(450-400)
+  - each flex item: `flex-shrink:1`
+  - 9 flex item, so add `flex-shrink` values, we get, 1+1+1+1+1+1+1+1+1 = 9 units
+  - 50px of overflow / 9 units = 5.55px
+  - so, each item will reduce from an original size of 50px to a size of 50px-5.55px = 44.45px
+  - now each flex-items should have 44.45 px width
+
+Each flex item can only shrink so far. Eventually, it reaches its smallest possible width, which is the width of its inner content.
+
+---
+
+=> Here is an another scenario in `flex-shrink`
+Now let's add 12 flex-items instead of 9. it overflows but items(10,11,13) does not fit into the container.
+
+\
+# Let's break it down again
+   - 400px
+   - 12 flex items, each has 50px width, total, 50*12 = 600px, so there is a overflow of 200px(600px-400px)
+   - each items `flex-shrink:1`
+   - 12 items `flex-shrink` value sums up to, 1+1+1+1+1+1+1+1+1+1+1+1 = 12 unit
+   - 200px of overflow / 12 unit = 16.66px
+   - so each item will reduce from an original size of 50px to a size of 50px - 16.66px = 33.34px
+
+Sounds great, but the problem is items(10,11, 12) cannot shrink to 33.34px,which means we are going to have some overflow. 
+Remember, flex items can shrink, but not more than their inner content
+
+
+---
+
+Now, let's see how we can use `flex-shrink` to define how our overflow space is allocated to flex-item. For this we'll add 9 flex-item within the container, since we know it'll fit into the container perfectly with a overflow of 5opx(50px flex items*9 = 450px-400px of total flex-container). At that moment each flex-item has `flex-shrink:1` which means they'll receive an equal allocation (so long as that doesn't shrink the item smaller than its content).
+
+What if I wanted the first 3 items to keep their full size of 50px and let the remaining items absorb that 50px overflow. we can do it by setting pu `flex-shrink` value to 0.
+
+.container {
+  display: flex;
+}
+.child-1{
+  flex-shrink: 0; 
+}
+.child-2 {
+  flex-shrink: 0; 
+}
+.child-3 {
+  flex-shrink: 0; 
+}
+
+
+# Now if we calculate, what'd be the reduced size of flex-items.
+   - 0 + 0 + 0 + 1 + 1 + 1 + 1 + 1 + 1 = 6 unit
+   - Total overflow of 50px (50px * 9 = 450px - 400px = 50px)
+   - 1 unit = 50 / 6 = 8.34px
+So in this scenario flex-item 1,2,3 keep their original size of 50px and remainder are reduced 8.34px
+
+
+</pre>
 
 - _`flex-basis`_ alternative of _`min-width`_ property in flexbox layout. We use _`flex-basis`_ for responsiveness.
    - _`flex-basis: 33.33%`_ you know how to set width in css
