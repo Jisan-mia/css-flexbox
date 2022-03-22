@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-.container1, .container2 {
+.container1, .container2,.container3 {
   display: flex;
   flex-direction: row;
   width: 408px;
@@ -14,7 +14,7 @@
 
 
 
-.container1 .child, .container2 .child {
+.container1 .child, .container2 .child, .container3 .child {
   background-color: #255954;
   display: flex;
   align-items: center;
@@ -26,7 +26,7 @@
 }
 
 
-.container1 .child p, .container2 .child p {
+.container1 .child p, .container2 .child p, .container3 .child p {
   font-size: 1.5rem;
   margin: 0;
   color: #71D99E;
@@ -44,4 +44,21 @@
 }
 .container2 .child:nth-child(10) p,.container2 .child:nth-child(11) p,.container2 .child:nth-child(12) p {
   color: #fff;
+}
+
+.container3 .child {
+}
+.container3 .child:nth-child(1) {
+ flex-basis: 20%;
+}
+.container3 .child:nth-child(2) {
+ flex-basis: 25%;
+}
+.container3 .child:nth-child(3) {
+  flex-basis: 35%;
+}
+.container3 .child:nth-child(4) {
+  flex-basis: 15%;
+  flex-grow: 1;
+
 }
