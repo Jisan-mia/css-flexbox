@@ -69,13 +69,16 @@
   order: 3
 }
 .container4 .child:nth-child(2) {
-  order:4
+  order:4;
+  background-color: chocolate;
 }
 .container4 .child:nth-child(3) {
-  order:2
+  order:2;
+  background-color: blueviolet;
 }
 .container4 .child:nth-child(4) {
   order:1;
+  background-color: #0b6632;
 }
 
 
