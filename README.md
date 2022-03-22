@@ -110,6 +110,8 @@ Flexbox is a css box model to easily layout, align and distribute space among it
    - _`flex-grow: 1`_ each-items/item grows equally to fit the container width or take up empty space in main-axis. 
    - _`flex-grow: 3`_
 <pre>
+flex-grow in detail:
+
 imagine we have a 300px width container and
 it has 4 items with 30px width and 30px height
 
